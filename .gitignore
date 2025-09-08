@@ -205,3 +205,13 @@ cython_debug/
 marimo/_static/
 marimo/_lsp/
 __marimo__/
+
+
+# Папки с результатами и данными
+pyscenedetect_results/
+videos_processed/
+videos_chapters/
+
+# Папки виртуального окружения
+.venv/
+venv/
