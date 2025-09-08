@@ -207,11 +207,26 @@ marimo/_lsp/
 __marimo__/
 
 
-# Папки с результатами и данными
-pyscenedetect_results/
-videos_processed/
-videos_chapters/
-
-# Папки виртуального окружения
-.venv/
+# Игнорировать виртуальное окружение Python
 venv/
+.venv/
+env/
+.env/
+
+# Игнорировать кеш и скомпилированные файлы Python
+__pycache__/
+*.pyc
+*.pyo
+*.pyd
+
+# Игнорировать большие файлы данных и модели
+# Их следует загружать отдельно по инструкциям в README
+/videos_processed/
+/videos_chapters/
+/TransNetV2/inference-pytorch/transnetv2-pytorch-weights.pth
+
+# Игнорировать папку с результатами, т.к. она генерируется скриптом
+/transnet_results/
+
+# Игнорировать файлы IDE (например, для VSCode)
+.vscode/
